@@ -1,0 +1,23 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    glu (8.3.0)
+    glut (8.3.0)
+    gosu (0.12.1)
+    json (2.1.0)
+    opengl (0.10.0)
+    ruby-opengl (0.61.0)
+      opengl
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  glu
+  glut
+  gosu
+  json
+  ruby-opengl
+
+BUNDLED WITH
+   1.14.6
