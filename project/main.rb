@@ -159,19 +159,6 @@ class Map
   end
 
   def draw
-      # @viewport
-      # glGetIntegerv( GL_VIEWPORT)
-      #
-      # glMatrixMode( GL_PROJECTION )
-      # glLoadIdentity()
-      # gluOrtho2D( 0, @viewport[2], @viewport[3], 0 )
-      # glMatrixMode( GL_MODELVIEW )
-      # glLoadIdentity()
-      # glDisable( GL_DEPTH_TEST )
-      # glDisable( GL_LIGHTING )
-      # glDisable( GL_TEXTURE_2D )
-      #
-
     # On parcourt le tableau case par case pour afficher les tuiles
     @board.each_with_index do |line, height|
       line.each_with_index do |tile, width|
@@ -184,12 +171,6 @@ class Map
         @tileset[tile.position].draw(height * TILE_SIZE, width * TILE_SIZE, ZORDER)
       end
     end
-    # // Making sure we can render 3d again
-    glMatrixMode(GL_PROJECTION);
-    glPopMatrix();
-    glMatrixMode(GL_MODELVIEW);
-    # //glPopMatrix();        ----and this?
-    # draw_rot(1, 1, 1, 0.5, center_x=0.5, center_y=0.5, scale_x=1, scale_y=1, color=0xff_ffffff, mode=:default);
   end
 
   def blocked?(tile_y, tile_x)
