@@ -347,6 +347,10 @@ class Cube
 
 
   def draw
+      # Enable depth test
+      glEnable(GL_DEPTH_TEST);
+      # Accept fragment if it closer to the camera than the former one
+      glDepthFunc(GL_LESS);
       glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) # see lesson01
       glMatrixMode(GL_PROJECTION) # see lesson01
       glLoadIdentity  # see lesson01
