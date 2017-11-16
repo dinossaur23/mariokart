@@ -336,10 +336,11 @@ end
 
 class Cube
   def initialize
-    @mario = Gosu::Image.new("project/cube_mario2.jpg", tileable: true).gl_tex_info
-    @luigi = Gosu::Image.new("project/cube_luigi.jpg", tileable: true).gl_tex_info
-    @yoshi = Gosu::Image.new("project/cube_yoshi.jpg", tileable: true).gl_tex_info
-    @peach = Gosu::Image.new("project/cube_peach.jpg", tileable: true).gl_tex_info
+    @mario = Gosu::Image.new("project/planet.jpg", tileable: true).gl_tex_info
+    # @mario = Gosu::Image.new("project/cube_mario2.jpg", tileable: true).gl_tex_info
+    # @luigi = Gosu::Image.new("project/cube_luigi.jpg", tileable: true).gl_tex_info
+    # @yoshi = Gosu::Image.new("project/cube_yoshi.jpg", tileable: true).gl_tex_info
+    # @peach = Gosu::Image.new("project/cube_peach.jpg", tileable: true).gl_tex_info
     # @toad = Gosu::Image.new("project/cube_toad.png", tileable: true).gl_tex_info
     # @koopa = Gosu::Image.new("project/cube_koopa.png", tileable: true).gl_tex_info
     @x = @y = @vel_x = @vel_y = @angle = @cube_angle = 0.0
@@ -363,9 +364,9 @@ class Cube
       glEnable(GL_TEXTURE_2D) # enables two-dimensional texturing to perform
 
       glBindTexture(GL_TEXTURE_2D, @mario.tex_name)
-      glBindTexture(GL_TEXTURE_2D, @luigi.tex_name)
-      glBindTexture(GL_TEXTURE_2D, @peach.tex_name)
-      glBindTexture(GL_TEXTURE_2D, @yoshi.tex_name)
+      # glBindTexture(GL_TEXTURE_2D, @luigi.tex_name)
+      # glBindTexture(GL_TEXTURE_2D, @peach.tex_name)
+      # glBindTexture(GL_TEXTURE_2D, @yoshi.tex_name)
       # glBindTexture(GL_TEXTURE_2D, @toad.tex_name)
       # glBindTexture(GL_TEXTURE_2D, @koopa.tex_name)
 
