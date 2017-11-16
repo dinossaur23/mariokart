@@ -336,10 +336,10 @@ end
 
 class Cube
   def initialize
-    @mario = Gosu::Image.new("project/cube_mario2.png", tileable: true).gl_tex_info
-    @luigi = Gosu::Image.new("project/cube_luigi.png", tileable: true).gl_tex_info
-    @yoshi = Gosu::Image.new("project/cube_yoshi.png", tileable: true).gl_tex_info
-    @peach = Gosu::Image.new("project/cube_peach.png", tileable: true).gl_tex_info
+    @mario = Gosu::Image.new("project/cube_mario2.jpg", tileable: true).gl_tex_info
+    @luigi = Gosu::Image.new("project/cube_luigi.jpg", tileable: true).gl_tex_info
+    @yoshi = Gosu::Image.new("project/cube_yoshi.jpg", tileable: true).gl_tex_info
+    @peach = Gosu::Image.new("project/cube_peach.jpg", tileable: true).gl_tex_info
     # @toad = Gosu::Image.new("project/cube_toad.png", tileable: true).gl_tex_info
     # @koopa = Gosu::Image.new("project/cube_koopa.png", tileable: true).gl_tex_info
     @x = @y = @vel_x = @vel_y = @angle = @cube_angle = 0.0
